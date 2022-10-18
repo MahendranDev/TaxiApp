@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mobile Number View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MobileNumberViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MobileNumberViewController" customModule="TaxiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="GXR-vp-Xcc">
+                                <rect key="frame" x="30" y="111" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="FXG-CY-Ur0"/>
+                                    <constraint firstAttribute="width" constant="90" id="f5A-Sz-OMP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proceed with your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suZ-cS-76m">
+                                <rect key="frame" x="30" y="237" width="171" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHn-JK-lI8" customClass="SubTitleLabel" customModule="TaxiApp" customModuleProvider="target">
+                                <rect key="frame" x="30.000000000000007" y="273.33333333333331" width="78.666666666666686" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.92549026010000002" green="0.6784313917" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1b-t3-TBQ" customClass="TextFieldTitleLabel" customModule="TaxiApp" customModuleProvider="target">
+                                <rect key="frame" x="30" y="353.33333333333331" width="194.33333333333334" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+91 123456786" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4h3-O2-Wn9">
+                                <rect key="frame" x="30" y="422" width="340" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tnO-Bd-ypB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.homebutton" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7RV-wU-dTQ">
+                                <rect key="frame" x="340" y="427.66666666666669" width="30" height="29.333333333333314"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TRR-sI-066"/>
+                                    <constraint firstAttribute="width" constant="30" id="oKy-Ip-OFr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-qp-VzZ" customClass="TaxiButton" customModule="TaxiApp" customModuleProvider="target">
+                                <rect key="frame" x="270" y="522" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CNn-DP-1XA"/>
+                                    <constraint firstAttribute="width" constant="100" id="Gce-XI-VUR"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="NEXT"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZHn-JK-lI8" firstAttribute="top" secondItem="suZ-cS-76m" secondAttribute="bottom" constant="10" id="0mb-md-cDl"/>
+                            <constraint firstItem="E1b-t3-TBQ" firstAttribute="leading" secondItem="ZHn-JK-lI8" secondAttribute="leading" id="AEb-oM-C3B"/>
+                            <constraint firstItem="GXR-vp-Xcc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="AdD-zL-yaa"/>
+                            <constraint firstItem="4h3-O2-Wn9" firstAttribute="top" secondItem="E1b-t3-TBQ" secondAttribute="bottom" constant="41.666666666666686" id="LvY-It-Rr7"/>
+                            <constraint firstItem="qlZ-qp-VzZ" firstAttribute="top" secondItem="4h3-O2-Wn9" secondAttribute="bottom" constant="60" id="N32-NY-Xjo"/>
+                            <constraint firstItem="suZ-cS-76m" firstAttribute="top" secondItem="GXR-vp-Xcc" secondAttribute="bottom" constant="36" id="S8H-eG-XWU"/>
+                            <constraint firstItem="suZ-cS-76m" firstAttribute="leading" secondItem="GXR-vp-Xcc" secondAttribute="leading" id="WEs-go-0bx"/>
+                            <constraint firstItem="4h3-O2-Wn9" firstAttribute="leading" secondItem="E1b-t3-TBQ" secondAttribute="leading" id="Xp0-Ap-5CP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7RV-wU-dTQ" secondAttribute="trailing" constant="20" id="e3J-xp-HSR"/>
+                            <constraint firstItem="GXR-vp-Xcc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="eEk-0g-Dbp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qlZ-qp-VzZ" secondAttribute="trailing" constant="20" id="fRw-J9-STi"/>
+                            <constraint firstItem="E1b-t3-TBQ" firstAttribute="top" secondItem="ZHn-JK-lI8" secondAttribute="bottom" constant="50" id="nCu-tv-LAQ"/>
+                            <constraint firstItem="7RV-wU-dTQ" firstAttribute="centerY" secondItem="4h3-O2-Wn9" secondAttribute="centerY" id="oCQ-lD-zGE"/>
+                            <constraint firstItem="ZHn-JK-lI8" firstAttribute="leading" secondItem="GXR-vp-Xcc" secondAttribute="leading" id="tUl-Rl-tUe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4h3-O2-Wn9" secondAttribute="trailing" constant="20" id="xUG-tp-SZB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Frx-YC-rmt"/>
+                    <connections>
+                        <outlet property="mobileNumberTextField" destination="4h3-O2-Wn9" id="LQD-IR-U4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="-5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FtX-Th-Axx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PCR-g9-YA3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HJg-aE-y14">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="4uI-rH-rCb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTm-1V-9pS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.92307692307692" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="qlZ-qp-VzZ">
+            <size key="intrinsicContentSize" width="39" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="app_logo" width="38.333332061767578" height="38.333332061767578"/>
+        <image name="iphone.homebutton" catalog="system" width="112" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
